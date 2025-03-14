@@ -1,0 +1,29 @@
+accounts:
+  - id: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
+    name: Cryptocurrency
+    assets:
+      crypto:
+        bitcoin: 0.23
+        ethereum: 10
+        litecoin: 4
+        cardano: 10
+        solana: 5.1
+  - id: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
+    name: Taxable Investments
+    assets:
+      stock:
+        - symbol: AAPL
+          shares: 10
+        - symbol: NFLX
+          shares: 20
+  - id: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx
+    name: Mixed Portfolio
+    assets:
+      crypto:
+        bitcoin: 2.3
+        ethereum: 10
+      stock:
+        - symbol: MSFT
+          shares: 15
+        - symbol: GOOGL
+          shares: 3
