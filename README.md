@@ -80,23 +80,11 @@ This file defines your accounts and assets, using the IDs you received via the P
 
 ### Configuration
 
-You can configure the application using environment variables:
-
-#### Environment Variables
-
-```
-PL_USERNAME=your-email@example.com
-PL_PASSWORD=your-password
-PL_API_KEY=your-projectionlab-api-key
-PL_MFA_KEY=YOUR-TOTP-SECRET-KEY  # Optional, only if MFA is enabled
-PL_URL=https://app.projectionlab.com/login  # Optional, defaults to this URL
-PL_TIME_DELAY=10  # Optional, seconds to wait for page loading
-```
 
 ### Running the Container
 
 1. Copy `docker-compose-example.yaml` to `docker-compose.yaml`
-2. Update any environment variables as needed
+2. Update any environment variables as needed (see below)
 3. From the `projectionlab-investement-updater` directory, build and run the container
 
     ```bash
@@ -104,6 +92,8 @@ PL_TIME_DELAY=10  # Optional, seconds to wait for page loading
     ```
 
 ### Environment Variables
+
+You can configure the application using environment variables:
 
 - `PL_USERNAME`: Your ProjectionLab email address
 - `PL_PASSWORD`: Your ProjectionLab password
