@@ -569,10 +569,10 @@ def update_projectionlab(update_commands: List[str], config: Dict) -> bool:
 
         logging.info("Entering email address...")
         try:
-            email_input = driver.find_element(By.XPATH, '//*[@id="input-7"]')
+            email_input = driver.find_element(By.XPATH, '//*[@id="input-v-7"]')
         except:
             try:
-                email_input = driver.find_element(By.XPATH, '//*[@id="input-6"]')
+                email_input = driver.find_element(By.XPATH, '//*[@id="input-v-6"]')
             except Exception as e:
                 logging.error(f"Error finding email input: {e}")
                 return False
@@ -583,10 +583,10 @@ def update_projectionlab(update_commands: List[str], config: Dict) -> bool:
 
         logging.info("Entering password...")
         try:
-            password_input = driver.find_element(By.XPATH, '//*[@id="input-9"]')
+            password_input = driver.find_element(By.XPATH, '//*[@id="input-v-9"]')
         except:
             try:
-                password_input = driver.find_element(By.XPATH, '//*[@id="input-8"]')
+                password_input = driver.find_element(By.XPATH, '//*[@id="input-v-8"]')
             except Exception as e:
                 logging.error(f"Error finding password input: {e}")
                 return False
